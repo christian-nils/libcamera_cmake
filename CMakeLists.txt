@@ -25,6 +25,7 @@ include(ExternalProject)
 ExternalProject_Add(libcamera_source
   GIT_REPOSITORY      https://github.com/raspberrypi/libcamera.git
   GIT_TAG             v0.2.0+rpt20240418
+  GIT_CONFIG          advice.detachedHead=false
   GIT_SHALLOW         ON
   CONFIGURE_COMMAND   meson setup build ../libcamera_source --prefix ${CMAKE_INSTALL_PREFIX} --libdir lib --buildtype ${MESON_BUILD_TYPE} --auto-features=disabled
                        -Dpipelines=all -Dipas=rpi/vc4,rpi/pisp -Dv4l2=true -Dgstreamer=enabled -Dtest=false -Dlc-compliance=disabled -Dcam=enabled -Dqcam=disabled -Ddocumentation=disabled -Dpycamera=enabled
