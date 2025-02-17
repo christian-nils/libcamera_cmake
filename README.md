@@ -22,4 +22,4 @@ colcon build --cmake-args="-DNJOBS=2"
 
 To avoid errors during `colcon build`, make sure you have installed the right dependencies, for Ubuntu:
 
-`apt-get update && apt-get upgrade -y && apt-get install -y v4l-utils python3 python3-pip git python3-jinja2 libboost-dev libgnutls28-dev openssl libtiff5-dev pybind11-dev qtbase5-dev libqt5core5a libqt5gui5 libqt5widgets5 cmake python3-yaml python3-ply libglib2.0-dev libgstreamer-plugins-base1.0-dev ninja-build`
+`apt-get update && apt-get upgrade -y && apt-get install -y v4l-utils python3 python3-pip git python3-jinja2 libboost-dev libgnutls28-dev openssl libtiff5-dev pybind11-dev qtbase5-dev libqt5core5a libqt5gui5 libqt5widgets5 cmake python3-yaml python3-ply libglib2.0-dev libgstreamer-plugins-base1.0-dev ninja-build libevent-dev`
